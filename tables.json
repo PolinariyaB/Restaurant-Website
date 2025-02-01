@@ -1,0 +1,20 @@
+[
+    { "tableId": 1, "capacity": 2 },
+    { "tableId": 2, "capacity": 2 },
+    { "tableId": 3, "capacity": 2 },
+    { "tableId": 4, "capacity": 2 },
+    { "tableId": 5, "capacity": 2 },
+
+    { "tableId": 6, "capacity": 4 },
+    { "tableId": 7, "capacity": 4 },
+    { "tableId": 8, "capacity": 4 },
+    { "tableId": 9, "capacity": 4 },
+    { "tableId": 10, "capacity": 4 },
+
+    { "tableId": 11, "capacity": 6 },
+    { "tableId": 12, "capacity": 6 },
+    { "tableId": 13, "capacity": 6 },
+    { "tableId": 14, "capacity": 6 },
+    { "tableId": 15, "capacity": 6 }
+  ]
+  

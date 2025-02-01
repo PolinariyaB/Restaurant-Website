@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование - Ресторан "Лесные Вкусы"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="menu.html">Меню</a>
+                <a href="about.html">О ресторане</a>
+                <a href="booking.html" class="btn">Забронировать</a>
+                <a href="profile.html" class="profile-link">
+                    Личный кабинет
+                    <img src="profile-icon.png" alt="Личный кабинет" title="Личный кабинет" class="profile-icon-img">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking">
+            <div class="booking-form-container">
+                <h2>Забронируйте столик</h2>
+                <form id="booking-form" action="/submit-booking" method="POST" autocomplete="off">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                
+                    <label for="date">Выберите дату:</label>
+                    <input type="date" id="date" name="date" required>
+                
+                    <label for="time">Выберите время:</label>
+                    <input type="time" id="time" name="time" min="09:00" max="21:00" step="3600" required>
+
+                
+                    <label for="guests">Количество посетителей:</label>
+                    <div id="guest-counter" class="guest-counter">
+                        <button type="button" id="decrease-guests" class="guest-button">-</button>
+                        <span id="guest-count" class="guest-count">1</span>
+                        <button type="button" id="increase-guests" class="guest-button">+</button>
+                    </div>
+                
+                    <input type="submit" value="Забронировать">
+                </form>
+                <div id="success-message" class="message">Бронь сохранена, проверьте её в личном кабинете.</div>
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ресторан "Лесные Вкусы". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="booking.js"></script>
+</body>
+</html>

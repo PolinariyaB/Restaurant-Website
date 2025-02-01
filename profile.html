@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">Главная</a>
+                <a href="menu.html">Меню</a>
+                <a href="about.html">О ресторане</a>
+                <a href="booking.html" class="btn">Забронировать</a>
+                <a href="profile.html" class="profile-link">
+                    Личный кабинет
+                    <img src="profile-icon.png" alt="Личный кабинет" title="Личный кабинет" class="profile-icon-img">
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="container">
+                <h2>Личный кабинет</h2>
+
+                <div class="choice active" id="choice-section">
+                    <button id="to-login">Войти</button>
+                    <button id="to-register">Регистрация</button>
+                </div>
+
+                <div class="login" id="login-section">
+                    <div class="error hidden" id="error-message-login"></div>
+                    <form id="login-form">
+                        <input type="email" id="email-login" placeholder="Email" required>
+                        <input type="password" id="password-login" placeholder="Пароль" required>
+                        <button type="submit">Войти</button>
+                    </form>
+                </div>
+
+                <div class="register" id="register-section">
+                    <div class="error hidden" id="error-message-register"></div>
+                    <form id="register-form">
+                        <label for="register-email">Email:</label>
+                        <input type="email" id="register-email" required>
+                        
+                        <label for="register-password">Пароль:</label>
+                        <input type="password" id="register-password" required>
+                        
+                        <button type="submit">Зарегистрироваться</button>
+                    </form>
+                </div>
+                <div class="user-info" id="user-info-section">
+                    <p>Добро пожаловать, <span id="user-email"></span></p>
+                    <h3>Ваши бронирования:</h3>
+                    <ul id="booking-list">
+                    </ul>
+                    <button id="logout">Выйти</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Ресторан "Лесные Вкусы". Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="profile.js"></script>
+</body>
+</html>
